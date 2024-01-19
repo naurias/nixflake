@@ -31,7 +31,10 @@
      source = ./assets/lf;
      recursive = true;
    };
-
+#    ".local/share/icons/Papirus" = {
+#        source = ./assets/icons/Papirus;
+#        recursive = true;
+#      };
 
    ".local/share/fonts" = {
      source = ./assets/fonts;
@@ -41,15 +44,24 @@
    
   };
 
+# Theming
+ # GTK 
+   gtk.enable = true;
 
-# Icons and Cursors
-#  gtk = {
-#   enable = true;
-#   theme = {
-#    package = pkgs.orchis-theme;
-#    name = "orchis-theme";
-#   };
-#  };
+   gtk.cursorTheme.package = pkgs.vimix-cursors;
+   gtk.cursorTheme.name = "Vimix-cursors";
+   
+   gtk.theme.package = pkgs.adw-gtk3;
+   gtk.theme.name = "adw-gtk3-dark";
+
+   gtk.iconTheme.package = pkgs.papirus-icon-theme;
+   gtk.iconTheme.name = "Papirus";
+ #QT Theming
+   qt.enable  = true; 
+   qt.platformTheme = "gtk";
+   qt.style.name = "adwaita-dark";
+# Packages to use for theme 
+   qt.style.package = pkgs.adwaita-qt6;
 
  home.stateVersion = "23.11";
  programs.home-manager.enable = true;

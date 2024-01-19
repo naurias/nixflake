@@ -23,10 +23,14 @@
      #xdg-desktop-portal-gtk
      qt6Packages.qt6ct
 # Themes
-     vimix-icon-theme
-     vimix-cursors
+     adw-gtk3
+     #qt6Packages.qtstyleplugin-kvantum
+     themechanger
+     #vimix-icon-theme
+    # vimix-cursors
      lxappearance
-     nerdfonts
+     fira-code-nerdfont
+    # nerdfonts
 # Terminals     
      alacritty
      #kitty
