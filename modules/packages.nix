@@ -11,6 +11,9 @@
      brave
 # Command Utilites     
      git
+     lazygit
+     ripgrep
+     fd
      wget
      pulseaudio
      steam-run
@@ -22,6 +25,7 @@
      vimix-icon-theme
      vimix-cursors
      lxappearance
+     nerdfonts
 # Terminals     
      alacritty
      #kitty
