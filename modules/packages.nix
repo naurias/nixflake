@@ -52,6 +52,9 @@
 # Media
      mpv
      streamlink
+
+# Personal
+     discord
    ];
 
   programs.thunar.enable = true;
