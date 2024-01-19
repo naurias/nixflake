@@ -18,7 +18,8 @@
      pulseaudio
      steam-run
      p7zip
-# Utils
+# Dev
+     gcc
      #xdg-desktop-portal-gtk
      qt6Packages.qt6ct
 # Themes
@@ -34,6 +35,7 @@
      waybar
      dunst
      keepassxc
+     obsidian
 #     nwg-look
 # Torrents 
      qbittorrent
