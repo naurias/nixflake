@@ -11,6 +11,7 @@
      brave
 # Command Utilites     
      git
+     #swaybg
      lazygit
      ripgrep
      fd
@@ -23,6 +24,7 @@
      #xdg-desktop-portal-gtk
      qt6Packages.qt6ct
 # Themes
+     hyprpaper
      adw-gtk3
      #qt6Packages.qtstyleplugin-kvantum
      themechanger
@@ -37,6 +39,7 @@
 # GUI Utilites
      rofi-wayland
      waybar
+     pavucontrol
      dunst
      keepassxc
      thunderbird

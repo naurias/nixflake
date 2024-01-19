@@ -18,31 +18,38 @@
      source = ./assets/waybar;
      recursive = true;
    };
+    
+   ".config/hypr" = {
+      source = ./assets/hypr;
+      recursive = true;
+    };
 
    ".config/alacritty/alacritty.toml" = {
      source = ./assets/alacritty/alacritty.toml;
    };
 
-   ".config/hypr/hyprland.conf" = {
-     source = ./assets/hypr/hyprland.conf;
-   };
 
    ".config/lf" = {
      source = ./assets/lf;
      recursive = true;
    };
-#    ".local/share/icons/Papirus" = {
-#        source = ./assets/icons/Papirus;
-#        recursive = true;
+#    ".config/hypr/hyprpaper.conf" = {
+#        source = ./assets/hypr/hyprpaper.conf;
+    #  };
+   # ".config/hypr/wallpapers" = {
+  #      source = ./assets/hypr/wallpapers;
+ #       recursive = true;
 #      };
 
    ".local/share/fonts" = {
      source = ./assets/fonts;
      recursive = true;
    };
-
    
   };
+
+
+ #home.file.".config/hypr/hyprpaper.conf".source = ./assets/hypr/hyprpaper.conf;
 
 # Theming
  # GTK 
