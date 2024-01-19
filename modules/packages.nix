@@ -35,7 +35,8 @@
      waybar
      dunst
      keepassxc
-     obsidian
+     thunderbird
+#     obsidian
 #     nwg-look
 # Torrents 
      qbittorrent
