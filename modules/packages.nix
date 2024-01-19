@@ -53,6 +53,10 @@
      mpv
      streamlink
 
+# Security
+     cryptomator
+     megasync
+
 # Personal
      discord
    ];
