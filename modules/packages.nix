@@ -59,7 +59,7 @@
 
 # Personal
      discord
-     zotero
+     #zotero
    ];
 
   programs.thunar.enable = true;
