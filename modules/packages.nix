@@ -60,8 +60,8 @@
 # Personal
      discord
      #zotero
-     buku
-     bukubrow
+     #buku
+     #bukubrow
    ];
 
   programs.thunar.enable = true;
