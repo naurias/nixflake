@@ -7,7 +7,6 @@
 # Editors     
      neovim 
 # Browsers
-     firefox
      brave
 # Command Utilites     
      git
@@ -59,9 +58,8 @@
 
 # Personal
      discord
-     #zotero
-     #buku
-     #bukubrow
+     buku
+     bukubrow
    ];
 
   programs.thunar.enable = true;
