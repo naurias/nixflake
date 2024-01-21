@@ -53,22 +53,22 @@
 
 # Theming
  # GTK 
-#   gtk.enable = true;
+   gtk.enable = true;
 
-#   gtk.cursorTheme.package = pkgs.vimix-cursors;
-#   gtk.cursorTheme.name = "Vimix-cursors";
+   gtk.cursorTheme.package = pkgs.vimix-cursors;
+   gtk.cursorTheme.name = "Vimix-cursors";
    
-#   gtk.theme.package = pkgs.adw-gtk3;
-#   gtk.theme.name = "adw-gtk3-dark";
+   gtk.theme.package = pkgs.adw-gtk3;
+   gtk.theme.name = "adw-gtk3-dark";
 
-#   gtk.iconTheme.package = pkgs.papirus-icon-theme;
-#   gtk.iconTheme.name = "Papirus";
+   gtk.iconTheme.package = pkgs.papirus-icon-theme;
+   gtk.iconTheme.name = "Papirus";
  #QT Theming
-#   qt.enable  = true; 
-#   qt.platformTheme = "gtk";
-#   qt.style.name = "adwaita-dark";
+   qt.enable  = true; 
+   qt.platformTheme = "gtk";
+   qt.style.name = "adwaita-dark";
 # Packages to use for theme 
-#   qt.style.package = pkgs.adwaita-qt6;
+   qt.style.package = pkgs.adwaita-qt6;
 
  home.stateVersion = "23.11";
  programs.home-manager.enable = true;
