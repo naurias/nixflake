@@ -20,6 +20,7 @@
      p7zip
 # Dev
      gcc
+     xdg-utils
      #xdg-desktop-portal-gtk
      qt6Packages.qt6ct
 # Themes
