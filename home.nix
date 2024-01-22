@@ -29,7 +29,7 @@
    };
    ".config/ranger" = {
      source = ./assets/ranger;
-     recirsove = true;
+     recursive = true;
    };
     
     ".config/kitty" = {
