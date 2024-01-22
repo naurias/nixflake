@@ -41,6 +41,7 @@
      #alacritty
      kitty
       ueberzugpp
+      ffmpegthumbnailer
      #wezterm
 # GUI Utilites
      rofi-wayland
