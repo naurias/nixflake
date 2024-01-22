@@ -18,6 +18,8 @@
      pulseaudio
      steam-run
      p7zip
+     grim
+     slurp
 # Dev
      gcc
      xdg-utils
@@ -44,6 +46,9 @@
      dunst
      keepassxc
      thunderbird
+     imagemagick
+     gwenview
+     okular
 #     obsidian
 #     nwg-look
 # Torrents 
