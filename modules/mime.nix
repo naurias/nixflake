@@ -2,7 +2,7 @@
 
 {
  xdg.mime.enable = true; 
- xdg.mime.default.Applications = {
+ xdg.mime.defaultApplications = {
 
     "inode/directory" = "thunar.desktop";
     "image/png"  = "gwenview.desktop";
