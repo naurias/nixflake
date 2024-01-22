@@ -34,8 +34,9 @@
      fira-code-nerdfont
     # nerdfonts
 # Terminals     
-     alacritty
-     #kitty
+     #alacritty
+     kitty
+     wezterm
 # GUI Utilites
      rofi-wayland
      waybar
