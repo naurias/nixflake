@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
- xdg.mim.enable = true; 
+ xdg.mime.enable = true; 
  xdg.mime.default.Applications = {
 
     "inode/directory" = "thunar.desktop";
