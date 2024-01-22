@@ -20,7 +20,7 @@
      p7zip
      grim
      kitty
-      ueberzegpp
+      ueberzugpp
      #wezterm
 # GUI Utilites
      rofi-wayland
