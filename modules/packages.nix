@@ -57,6 +57,7 @@
      qbittorrent
 # File Managers
      lf
+     ranger
      #krusader
 # Media
      mpv
