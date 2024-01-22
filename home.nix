@@ -29,10 +29,10 @@
    };
 
 
-#   ".config/lf" = {
-#     source = ./assets/lf;
-#     recursive = true;
-#   };
+   ".config/lf" = {
+     source = ./assets/lf;
+     recursive = true;
+   };
 #    ".config/hypr/hyprpaper.conf" = {
 #        source = ./assets/hypr/hyprpaper.conf;
     #  };
