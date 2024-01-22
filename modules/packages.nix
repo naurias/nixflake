@@ -22,6 +22,7 @@
      flameshot
      slurp
 # Dev
+     nodejs_21
      gcc
      xdg-utils
      #xdg-desktop-portal-gtk
