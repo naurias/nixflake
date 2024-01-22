@@ -36,7 +36,7 @@
 # Terminals     
      #alacritty
      kitty
-     wezterm
+     #wezterm
 # GUI Utilites
      rofi-wayland
      waybar
