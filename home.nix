@@ -27,7 +27,15 @@
    ".config/alacritty/alacritty.toml" = {
      source = ./assets/alacritty/alacritty.toml;
    };
-
+   ".config/ranger" = {
+     source = ./assets/ranger;
+     recirsove = true;
+   };
+    
+    ".config/kitty" = {
+        source = ./assets/kitty;
+        recursive = true;
+      };
 
    ".config/lf" = {
      source = ./assets/lf;
