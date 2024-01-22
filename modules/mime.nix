@@ -4,7 +4,7 @@
  xdg.mime.enable = true; 
  xdg.mime.defaultApplications = {
 
-    "inode/directory" = "thunar.desktop";
+    "inode/directory" = "ranger.desktop";
     "image/png"  = "org.kde.gwenview.desktop";
     "image/jpeg"  = "org.kde.gwenview.desktop";
     "x-scheme-handler/http" = "brave-browser.desktop";

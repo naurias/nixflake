@@ -18,6 +18,7 @@
      pulseaudio
      steam-run
      p7zip
+     unzip
      grim
      flameshot
      slurp
