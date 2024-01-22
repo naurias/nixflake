@@ -33,7 +33,7 @@
      #themechanger
      #vimix-icon-theme
     # vimix-cursors
-     lxappearance
+    # lxappearance
      fira-code-nerdfont
     # nerdfonts
 # Terminals     
