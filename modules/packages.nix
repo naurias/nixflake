@@ -35,6 +35,7 @@
     # vimix-cursors
     # lxappearance
      fira-code-nerdfont
+     meslo-lgs-nf
     # nerdfonts
 # Terminals     
      #alacritty
