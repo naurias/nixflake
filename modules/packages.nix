@@ -19,25 +19,8 @@
      steam-run
      p7zip
      grim
-     slurp
-# Dev
-     gcc
-     xdg-utils
-     #xdg-desktop-portal-gtk
-     qt6Packages.qt6ct
-# Themes
-     hyprpaper
-     adw-gtk3
-     #qt6Packages.qtstyleplugin-kvantum
-     themechanger
-     #vimix-icon-theme
-    # vimix-cursors
-     lxappearance
-     fira-code-nerdfont
-    # nerdfonts
-# Terminals     
-     #alacritty
      kitty
+      ueberzegpp
      #wezterm
 # GUI Utilites
      rofi-wayland
