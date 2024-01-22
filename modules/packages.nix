@@ -22,6 +22,7 @@
      kitty
       ueberzugpp
      #wezterm
+     xdg-utls
 # GUI Utilites
      rofi-wayland
      waybar
