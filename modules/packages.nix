@@ -55,7 +55,7 @@
      qbittorrent
 # File Managers
      lf
-     krusader
+     #krusader
 # Media
      mpv
      streamlink
@@ -70,11 +70,11 @@
      bukubrow
    ];
 
-#  programs.thunar.enable = true;
-#  programs.thunar.plugins = with pkgs.xfce; [
-#   thunar-archive-plugin
-#   thunar-volman
-#];
+  programs.thunar.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+   thunar-archive-plugin
+   thunar-volman
+];
 
 
 }
