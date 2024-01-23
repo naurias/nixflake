@@ -23,6 +23,8 @@
      flameshot
      slurp
 # Dev
+     python3Full
+     python311Packages.virtualenv
      nodejs_21
      gcc
      xdg-utils
