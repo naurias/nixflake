@@ -18,6 +18,7 @@
       ./modules/nix-ld.nix
       ./modules/certificates.nix
       ./modules/mime.nix
+      ./modules/virt.nix
     ];
 
 
