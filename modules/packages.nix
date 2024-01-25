@@ -8,7 +8,7 @@
      neovim 
 # Browsers
      brave
-     qutebrower
+     qutebrowser
       python311Packages.adblock
 # Command Utilites     
      git
