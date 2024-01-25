@@ -8,6 +8,8 @@
      neovim 
 # Browsers
      brave
+     qutebrower
+      python311Packages.adblock
 # Command Utilites     
      git
      #swaybg
