@@ -6,6 +6,7 @@
    environment.systemPackages = with pkgs; [
 # Editors     
      neovim 
+     emacs29-pgtk
 # Browsers
      brave
      qutebrowser
