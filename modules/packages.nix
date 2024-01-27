@@ -11,7 +11,8 @@
      brave
      qutebrowser
       python311Packages.adblock
-# Command Utilites     
+# Command Utilites 
+     brightnessctl
      git
      #swaybg
      lazygit
