@@ -78,7 +78,7 @@
      megasync
 
 # Personal
-     discord
+     #discord
      buku
      bukubrow
    ];
