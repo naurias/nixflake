@@ -3,8 +3,8 @@
 {
 
 # Enable libvirt and kvm and virt-manager
-virtualisation.libvirtd.enable = true;
-programs.virt-manager.enable = true;
+#virtualisation.libvirtd.enable = true;
+#programs.virt-manager.enable = true;
 
 # docker
 virtualisation.docker.enable = true;
