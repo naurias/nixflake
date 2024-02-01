@@ -75,6 +75,7 @@
 # Media
      mpv
      streamlink
+     streamlink-twitch-gui-bin
 
 # Security
      cryptomator
