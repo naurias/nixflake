@@ -15,6 +15,7 @@
 # Command Utilites 
      brightnessctl
      git
+     htop
      #swaybg
      lazygit
      ripgrep
