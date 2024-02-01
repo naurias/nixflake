@@ -30,6 +30,7 @@
      slurp
 # Dev
      python3Full
+     openssl
      python311Packages.virtualenv
      nodejs_21
      gcc
