@@ -74,7 +74,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
    users.users.naurias = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "libvirtd" ]; # Enable ‘sudo’ for the user.
+     extraGroups = [ "wheel" "libvirtd" "docker" ]; # Enable ‘sudo’ for the user.
   #   packages = with pkgs; [
   #     firefox
   #     tree
