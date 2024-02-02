@@ -68,6 +68,8 @@
 #     nwg-look
 # Torrents 
      qbittorrent
+# Desgin
+     inkscape
 # File Managers
      lf
      ranger
