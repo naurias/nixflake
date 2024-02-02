@@ -13,6 +13,7 @@
    ".config/test1/test.txt" = {
      source = ./example.txt;
    };
+# settings for waybar
 
    ".config/waybar" = {
      source = ./assets/waybar;
