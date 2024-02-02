@@ -74,9 +74,10 @@
      lf
      ranger
      #krusader
-# Media
+# Media # Games
      mpv
      streamlink
+     wineWowPackages.stagingFull
 #     streamlink-twitch-gui-bin
 
 # Security
