@@ -78,6 +78,7 @@
      mpv
      streamlink
      wineWowPackages.stagingFull
+     winetricks
 #     streamlink-twitch-gui-bin
 
 # Security
