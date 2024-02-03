@@ -20,6 +20,7 @@
       ./modules/mime.nix
       ./modules/vaapi.nix
       ./modules/virt.nix
+      ./modules/bluetooth.nix
     ];
 
 

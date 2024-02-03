@@ -30,6 +30,9 @@
      slurp
 # Dev
      python3Full
+     bluez
+     blueman
+     networkmanagerapplet
      openssl
      python311Packages.virtualenv
      nodejs_21
