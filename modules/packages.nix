@@ -31,6 +31,7 @@
 # Dev
      python3Full
      bluez
+     parallel
      blueman
      networkmanagerapplet
      openssl
@@ -61,6 +62,7 @@
      rofi-wayland
      waybar
      pavucontrol
+     pamixer
      dunst
      keepassxc
      thunderbird
