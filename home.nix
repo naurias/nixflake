@@ -32,7 +32,7 @@
      source = ./assets/ranger;
      recursive = true;
    };
-   ".confi/dunst" = {
+   ".config/dunst" = {
       source = ./assets/dunst;
       recursive = true; 
    };
