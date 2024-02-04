@@ -7,10 +7,10 @@
     "inode/directory" = "ranger.desktop";
     "image/png"  = "org.kde.gwenview.desktop";
     "image/jpeg"  = "org.kde.gwenview.desktop";
-    "x-scheme-handler/http" = "brave-browser.desktop";
-    "x-scheme-handler/https" = "brave-browser.desktop";
-    "text/html" = "brave-browser.desktop";
-    "x-scheme-handler/chrome" = "brave-browser.desktop";
+    "x-scheme-handler/http" = "firefox.desktop";
+    "x-scheme-handler/https" = "firefox.desktop";
+    "text/html" = "firefox.desktop";
+    "x-scheme-handler/chrome" = "firefox.desktop";
     "video/mp4" = "mpv.desktop";
     "video/mpeg" = "mpv.desktop";
     "text/plain" = "nvim.desktop";
