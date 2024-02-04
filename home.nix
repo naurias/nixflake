@@ -32,6 +32,10 @@
      source = ./assets/ranger;
      recursive = true;
    };
+   ".confi/dunst" = {
+      source = ./assets/dunst;
+      recursive = true; 
+   };
     
     ".config/kitty" = {
         source = ./assets/kitty;
