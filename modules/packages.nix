@@ -9,6 +9,7 @@
      emacs29-pgtk
 # Browsers
      brave
+     firefox
 #     librewolf
      qutebrowser
       python311Packages.adblock
