@@ -8,7 +8,7 @@
      neovim 
      emacs29-pgtk
 # Browsers
-     brave
+#     brave
      firefox
 #     librewolf
      qutebrowser
