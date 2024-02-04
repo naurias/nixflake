@@ -89,6 +89,7 @@
 # Security
      cryptomator
      megasync
+     bitwarden
 
 # Personal
      #discord
