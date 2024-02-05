@@ -67,9 +67,9 @@ mkswap /dev/sda3
 ** Mount
  After partitioning mount them as follows
 - Your root partition
-#+begin_src
+  #+begin_src
 mount /dev/sda2 /mnt
-#+end_src
+    #+end_src
 - mounting root partion to make btrfs subvolumes so we can make use of btrfs option
 #+begin_src
 cd /mnt
