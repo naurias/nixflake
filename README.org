@@ -153,7 +153,7 @@ nixos-rebuild switch --flake .#nixreaper --experimental-features 'nix-command fl
 Reboot the system and yo'll have exact same system installed
 
 * General Usage
-Following are the keybingins for general workflow usage,
+Following are the keybindings for general workflow usage,
 | Keybindings            | What it Does                                       |
 |------------------------+----------------------------------------------------|
 | *General Usage*        |                                                    |
