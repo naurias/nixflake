@@ -5,16 +5,56 @@ My personel wayland nixos flake with home-manager
 #+Authot: Nauman Ahmad
 * Table of Contents
 - [[#introduction][Introduction]]
-- [[#my-window-manager-configs][My Window Manager Configs]]
-- [[#other-popular-configs-of-mine][Other Popular Configs Of Mine]]
-- [[#who-am-i][Who Am I?]]
-- [[#distrotube-on-the-web][DistroTube On The Web]]
-- [[#support-dts-work][Support DT's Work]]
-- [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
-- [[#license][License]]
-- [[Chapter 1][Chapter 1]]
+- [[#main-configuration][Main Configuration]]
+- [[#home-manager][Home Manager]]
+- [[#installation][Installation]]
 * Introduction
+My personal NixOS system using primarily wayland (only requiring xwayland when absolutely necessary).Here is the summary of this setup
+- *Home-manager* as user configuration and dotfile management
+- *Hyprland* as wyaland compositor
+- *Kitty* as terminal emulartor with
+- *Rofi* as primary file manager included with image, video thumbnail, pdf and svg previews
+- *Thunar* as GUI file manager
+- *Nvchad neovim* as terminal editor
+- *Doom emacs* as gui editor
+- *Rofi-wayland* as application launcher
+- *Firefox* as primary browser
 
+* Main Configuration
+- [[./configuration.nix][configuration.nix]] Is my main configuration file that contain imported module from [[./modules][modules]] directory having connfiguration spplit into modlue for different tasks such as packages, services and so on.
+- [[./hardware-configuration.nix][hardware-configuration.nix]] is my hardware info and declarative file system, b asics of which are as
+  - BTRFS as root filesystem with root, home, var and nix subvolumes
+  - 8 GB swap partition
+  - BTRFS with enabled options of zstd-compression, ssd and space_cache=v2
+- [[./flake.nix][flake.nix]] is my NixOS flake with home-manager enabled. Both nixpkgs and home-manager are enabled on unstable channel
+* Home Manager
+- My home manager declarative configuration having [[./home.nix][home.nix]] as my main home configuration
+- [[./assets][assets]] directory contains dotfiles/configuration files for installed packages such as waybar, hyprland and so on. Some of the are declarative while others are simple symlinked sources to .config of user as configured in home.nix
+** Themes & Fonts
+Theming is done declaratively as per [[./home.nix][home.nix]] file having following components
+- *Adwaita Dark* as gtk theme
+- *Vimix Cursosrs* as cursor them
+- *Papirus* as icon theme
+- *Adwaita* as qt5 and qt6 them (qt6 is generally preferred)
+- *Fonts* are sourced declaratively from assets directory into ,local/share/fonts of user. Patched fonts are included
 
+* Installation
+You can install this on preinstalled system *This will delete current system's configuration* or from live iso. Considereing you have live media prepare and are booted into it following are the installation steps
+** Partitioning
+This configuration use
+- BTRFS as root file system with zstd compression
+- FAT 32 as efi partion
+- Grub as Boot loader
+- 8 GB Swap partion
+Make sure you have 3 partions. You can use any partition manager i.e cfdisk, gparted, fdisk. I personally use cfdisk
+- an efi partion (sda1)
+- a linux filesystem (sda2)
+- a swap partition (sda3)
 
-* Chapter 1
+Partition as follows
+
+#+NAME; Partitioning
+#+BEGIN_SRC
+mkfs.btrfs /dev/sda2
+#+END_SRC
+src_language[header]{mkfs.vfat -F32 /dev/sda1}
