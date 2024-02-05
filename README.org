@@ -11,7 +11,7 @@ My personel wayland nixos flake with home-manager
 - [[#support-dts-work][Support DT's Work]]
 - [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
 - [[#license][License]]
-[[Chapter 1][- Chapter 1]]
+- [[Chapter 1]]
 * Introduction
 
 
