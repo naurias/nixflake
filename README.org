@@ -53,8 +53,7 @@ Make sure you have 3 partions. You can use any partition manager i.e cfdisk, gpa
 
 Partition as follows
 
-#+NAME: <Partitioning>
+#+NAME: Partitioning
 #+BEGIN_SRC
 mkfs.btrfs /dev/sda2
 #+END_SRC
-src_language[header]{mkfs.vfat -F32 /dev/sda1}
