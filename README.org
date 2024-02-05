@@ -1,4 +1,5 @@
 #+title: Nixflake
+[[./repo-assets/introduction.png]]
 My personel wayland nixos flake with home-manager
 #+DESCRIPTION: My personal wayland nixos flake with home-manager
 #+Authot: Nauman Ahmad
@@ -11,8 +12,9 @@ My personel wayland nixos flake with home-manager
 - [[#support-dts-work][Support DT's Work]]
 - [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
 - [[#license][License]]
-- [[Chapter 1]]
+- [[Chapter 1][Chapter 1]]
 * Introduction
+
 
 
 * Chapter 1
