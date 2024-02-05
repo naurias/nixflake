@@ -2,5 +2,14 @@
 #+DESCRIPTION: Mye personal wayland nixos flake with home-manager
 #+Authot: Nauman Ahmad
 * Table of Contents
-- [[#Introduction
-  Not]]
+- [[#what-are-dotfiles][What Are Dotfiles?]]
+- [[#my-window-manager-configs][My Window Manager Configs]]
+- [[#other-popular-configs-of-mine][Other Popular Configs Of Mine]]
+- [[#who-am-i][Who Am I?]]
+- [[#distrotube-on-the-web][DistroTube On The Web]]
+- [[#support-dts-work][Support DT's Work]]
+- [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
+- [[#license][License]]
+
+* What Are Dotfiles?
+
