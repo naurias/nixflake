@@ -1,8 +1,9 @@
 #+title: Nixflake
-#+DESCRIPTION: Mye personal wayland nixos flake with home-manager
+My personel wayland nixos flake with home-manager
+#+DESCRIPTION: My personal wayland nixos flake with home-manager
 #+Authot: Nauman Ahmad
 * Table of Contents
-- [[#what-are-dotfiles][What Are Dotfiles?]]
+- [[#introduction][Introduction]]
 - [[#my-window-manager-configs][My Window Manager Configs]]
 - [[#other-popular-configs-of-mine][Other Popular Configs Of Mine]]
 - [[#who-am-i][Who Am I?]]
@@ -10,6 +11,8 @@
 - [[#support-dts-work][Support DT's Work]]
 - [[#how-to-manage-your-own-dotfiles][How To Manage Your Own Dotfiles]]
 - [[#license][License]]
+[[Chapter 1][- Chapter 1]]
+* Introduction
 
-* What Are Dotfiles?
 
+* Chapter 1
