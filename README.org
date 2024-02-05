@@ -8,6 +8,7 @@ My personel wayland nixos flake with home-manager
 - [[#main-configuration][Main Configuration]]
 - [[#home-manager][Home Manager]]
 - [[#installation][Installation]]
+- [[#general-usage][General Usage]]
 * Introduction
 My personal NixOS system using primarily wayland (only requiring xwayland when absolutely necessary).Here is the summary of this setup
 - *Home-manager* as user configuration and dotfile management
@@ -19,6 +20,7 @@ My personal NixOS system using primarily wayland (only requiring xwayland when a
 - *Doom emacs* as gui editor
 - *Rofi-wayland* as application launcher
 - *Firefox* as primary browser
+- *Dunst* as notification daemon
 
 * Main Configuration
 - [[./configuration.nix][configuration.nix]] Is my main configuration file that contain imported module from [[./modules][modules]] directory having connfiguration spplit into modlue for different tasks such as packages, services and so on.
@@ -70,18 +72,19 @@ mkswap /dev/sda3
   #+begin_src
 mount /dev/sda2 /mnt
   #+end_src
- mounting root partion to make btrfs subvolumes so we can make use of btrfs option
+ mounting the root partion to make btrfs subvolumes so we can make use of btrfs option
   #+begin_src
   cd /mnt
   #+end_src
-  root subvolume
+ create root subvolume
   #+begin_src
   btrfs subvolume create @
   #+end_src
-  home subvolume
+ create home subvolume
   #+begin_src
   btrfs subvolume create @home
   #+end_src
+  creat var
   #+begin_src
   btrfs subvolume create @var
   #+end_src
@@ -102,3 +105,76 @@ mkdir -p /mnt/{boot,home,var}
   #+begin_src
 mount /dev/sda1 /mnt/boot
   #+end_src
+  turn the swap partition on
+  #+begin_src
+swapon /dev/sda3
+  #+end_src
+
+** Generating nixos config
+After mounting generate the default nixos configuration
+#+begin_src
+nixos-generate-config --root /mnt
+#+end_src
+After generting the default config you'll have two files name configuration.nix and hardware-configuration.nix in /mnt/etc/nixos
+** Installing the system
+There are two approaches you can take from here to install this system
+- Install nixos as one usually does. Follow [[https;//nixos.wiki/NixOS_Installation_Guide][this]] link for detailed instruction
+- Use flake directly from live iso
+
+*** From installed system
+Install the system and follow the guide as explained in [[#from-live-iso][From Live Iso]] section
+*** From Live Iso
+Make sure you have git installed (or any other method) to clone this github repository
+#+begin_src
+git clone https://github.com/naurias/nixflake.git
+#+end_src
+enter the repo directory
+#+begin_src
+cd nixflake
+#+end_src
+copy your main hardware configuration paste it in this directory overwriting the one in repo
+#+begin_src
+cp /mnt/etc/nixos/hardware-configuration.nix .
+#+end_src
+or if you're in preinstalled system
+#+begin_src
+cp /etc/nixos/hardware-configuration.nix .
+#+end_src
+enable flakes either temporarily or in configuration. Refer to [[https://nixos.wiki/wiki/Flakes][this]] link on how to enable flakes
+
+In the repo install the system as follows (with flakes enabled in config)
+#+begin_src
+nixos-rebuild switch --flake .#nixreaper
+#+end_src
+or with flakes not enabled in main configuration
+#+begin_src
+nixos-rebuild switch --flake .#nixreaper --experimental-features 'nix-command flakes'
+#+end_src
+Reboot the system and yo'll have exact same system installed
+
+* General Usage
+Following are the keybingins for general workflow usage,
+| Keybindings            | What it Does                                       |
+|------------------------+----------------------------------------------------|
+| General Usage                                                               |
+|------------------------+----------------------------------------------------|
+| SUPER+Return           | Opens kitty terminal                               |
+| SUPER+D                | Opens rofi application launcher                    |
+| SUPER+W                | Close the focused window                           |
+| SUPER+SHIFT+Q          | Exit hyprland (to tty)                             |
+| SUPER+F                | Enter fullscreen                                   |
+| SUPER+S                | Make window float                                  |
+| SUPER+M                | Enter monocle mode                                 |
+| SUPER+SHFIT+F          | Enter fake fullscreen mode                         |
+| Navigation                                                                  |
+|------------------------+----------------------------------------------------|
+| SUPER+up               | Move focus to upper window                         |
+| SUPER+down             | Move focus to lower window                         |
+| SUPER+left             | Move focus to leff window                          |
+| SUPER+right            | Move focus to right window                         |
+| SUPER+SHIFT+arrow-keys | Move window itself and focus at respctive location |
+| Workspaces                                                                  |
+|------------------------+----------------------------------------------------|
+| SUPER+1-9              | Move to workspaces 1-9                             |
+| SUPER+V                | Enter Scratchpad special window                    |
+| SUPER+SHIFT+V          | Move window to scrathpad                           |
