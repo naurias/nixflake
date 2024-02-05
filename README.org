@@ -69,23 +69,23 @@ mkswap /dev/sda3
 - Your root partition
   #+begin_src
 mount /dev/sda2 /mnt
-    #+end_src
+  #+end_src
 - mounting root partion to make btrfs subvolumes so we can make use of btrfs option
-#+begin_src
-cd /mnt
-#+end_src
-root subvolume
-#+begin_src
-btrfs subvolume create @
-#+end_src
-home subvolume
-#+begin_src
-btrfs subvolume create @home
-#+end_src
-#+begin_src
-btrfs subvolume create @var
-#+end_src
-after creating these three subvolumes in the /mnt directory you can confirm them by listing (ls) the contetns of /mnt directory. It should have three folders named "@", "@home" and "@var"
+  #+begin_src
+  cd /mnt
+  #+end_src
+  root subvolume
+  #+begin_src
+  btrfs subvolume create @
+  #+end_src
+  home subvolume
+  #+begin_src
+  btrfs subvolume create @home
+  #+end_src
+  #+begin_src
+  btrfs subvolume create @var
+  #+end_src
+  after creating these three subvolumes in the /mnt directory you can confirm them by listing (ls) the contetns of /mnt directory. It should have three folders named "@", "@home" and "@var"
 - unmount /mnt
   #+begin_src
 umount /mnt
