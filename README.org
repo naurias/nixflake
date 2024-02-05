@@ -82,6 +82,8 @@ mount /dev/sda2 /mnt
   #+begin_src
   btrfs subvolume create @home
   #+end_src
+
+
   #+begin_src
   btrfs subvolume create @var
   #+end_src
