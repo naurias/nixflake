@@ -56,4 +56,6 @@ Partition as follows
 #+NAME: Partitioning
 #+BEGIN_SRC
 mkfs.btrfs /dev/sda2
+mkfs.vfat -F32 /dev/sda1
+mkswap /dev/sda3
 #+END_SRC
