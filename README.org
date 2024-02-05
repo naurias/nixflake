@@ -82,8 +82,6 @@ mount /dev/sda2 /mnt
   #+begin_src
   btrfs subvolume create @home
   #+end_src
-
-
   #+begin_src
   btrfs subvolume create @var
   #+end_src
@@ -101,3 +99,6 @@ mount -o defaults,noatime,space_cache=v2,discard=async,compress=zstd,ssd,subvol=
 mkdir -p /mnt/{boot,home,var}
   #+end_src
 - mount root partion
+  #+begin_src
+mount /dev/sda1 /mnt/boot
+  #+end_src
