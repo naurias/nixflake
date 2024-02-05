@@ -2,4 +2,4 @@
 #+DESCRIPTION: Mye personal wayland nixos flake with home-manager
 #+Authot: Nauman Ahmad
 * Table of Contents
-- Introduction
+- [[#1] [Introduction]]
