@@ -156,7 +156,7 @@ Reboot the system and yo'll have exact same system installed
 Following are the keybingins for general workflow usage,
 | Keybindings            | What it Does                                       |
 |------------------------+----------------------------------------------------|
-| General Usage          |                                                    |
+| *General Usage*        |                                                    |
 |------------------------+----------------------------------------------------|
 | SUPER+Return           | Opens kitty terminal                               |
 | SUPER+D                | Opens rofi application launcher                    |
@@ -166,14 +166,14 @@ Following are the keybingins for general workflow usage,
 | SUPER+S                | Make window float                                  |
 | SUPER+M                | Enter monocle mode                                 |
 | SUPER+SHFIT+F          | Enter fake fullscreen mode                         |
-| Navigation             |                                                    |
+| *Navigation*           |                                                    |
 |------------------------+----------------------------------------------------|
 | SUPER+up               | Move focus to upper window                         |
 | SUPER+down             | Move focus to lower window                         |
 | SUPER+left             | Move focus to leff window                          |
 | SUPER+right            | Move focus to right window                         |
 | SUPER+SHIFT+arrow-keys | Move window itself and focus at respctive location |
-| Workspaces             |                                                    |
+| *Workspaces*           |                                                    |
 |------------------------+----------------------------------------------------|
 | SUPER+1-9              | Move to workspaces 1-9                             |
 | SUPER+V                | Enter Scratchpad special window                    |
