@@ -7,6 +7,7 @@
 # Editors     
      neovim 
      emacs29-pgtk
+      libvterm
 # Browsers
 #     brave
      firefox
