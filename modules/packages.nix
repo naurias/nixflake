@@ -8,6 +8,7 @@
      neovim 
      emacs29-pgtk
       libvterm
+      emacsPackages.vterm
 # Browsers
 #     brave
      firefox
