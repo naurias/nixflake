@@ -9,6 +9,8 @@
      emacs29-pgtk
       libvterm
       emacsPackages.vterm
+      etBook
+      source-sans-pro
 # Browsers
 #     brave
      firefox
