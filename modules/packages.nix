@@ -33,6 +33,7 @@
 # Dev
      python3Full
      bluez
+     cmake
      parallel
      blueman
      networkmanagerapplet
