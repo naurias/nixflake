@@ -9,7 +9,7 @@
      emacs29-pgtk
       libvterm
       emacsPackages.vterm
-      etBook
+#      etBook
       source-sans-pro
 # Browsers
 #     brave
