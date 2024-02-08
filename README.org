@@ -112,7 +112,7 @@ swapon /dev/sda3
 
 ** Generating nixos config
 After mounting generate the default nixos configuration
-#+begin_src
+#+begin_src shell
 nixos-generate-config --root /mnt
 #+end_src
 After generting the default config you'll have two files name configuration.nix and hardware-configuration.nix in /mnt/etc/nixos
@@ -125,29 +125,29 @@ There are two approaches you can take from here to install this system
 Install the system and follow the guide as explained in [[#from-live-iso][From Live Iso]] section
 *** From Live Iso
 Make sure you have git installed (or any other method) to clone this github repository
-#+begin_src
+#+begin_src shell
 git clone https://github.com/naurias/nixflake.git
 #+end_src
 enter the repo directory
-#+begin_src
+#+begin_src shell
 cd nixflake
 #+end_src
 copy your main hardware configuration paste it in this directory overwriting the one in repo
-#+begin_src
+#+begin_src shell
 cp /mnt/etc/nixos/hardware-configuration.nix .
 #+end_src
 or if you're in preinstalled system
-#+begin_src
+#+begin_src shell
 cp /etc/nixos/hardware-configuration.nix .
 #+end_src
 enable flakes either temporarily or in configuration. Refer to [[https://nixos.wiki/wiki/Flakes][this]] link on how to enable flakes
 
 In the repo install the system as follows (with flakes enabled in config)
-#+begin_src
+#+begin_src shell
 nixos-rebuild switch --flake .#nixreaper
 #+end_src
 or with flakes not enabled in main configuration
-#+begin_src
+#+begin_src shell
 nixos-rebuild switch --flake .#nixreaper --experimental-features 'nix-command flakes'
 #+end_src
 Reboot the system and yo'll have exact same system installed
