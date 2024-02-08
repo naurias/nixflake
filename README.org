@@ -55,58 +55,58 @@ Make sure you have 3 partions. You can use any partition manager i.e cfdisk, gpa
 
 Partition as follows
 Your root partition
-#+BEGIN_SRC
+#+BEGIN_SRC shell
 mkfs.btrfs /dev/sda2
 #+END_SRC
 Your efi partition
-#+begin_src
+#+begin_src shell
 mkfs.vfat -F32 /dev/sda1
 #+end_src
 Your sawp partition
-#+begin_src
+#+begin_src shell
 mkswap /dev/sda3
 #+end_src
 ** Mount
  After partitioning mount them as follows
  Your root partition
-  #+begin_src
+  #+begin_src shell
 mount /dev/sda2 /mnt
   #+end_src
  mounting the root partion to make btrfs subvolumes so we can make use of btrfs option
-  #+begin_src
+  #+begin_src shell
   cd /mnt
   #+end_src
  create root subvolume
-  #+begin_src
+  #+begin_src shell
   btrfs subvolume create @
   #+end_src
  create home subvolume
-  #+begin_src
+  #+begin_src shell
   btrfs subvolume create @home
   #+end_src
   creat var
-  #+begin_src
+  #+begin_src shell
   btrfs subvolume create @var
   #+end_src
   after creating these three subvolumes in the /mnt directory you can confirm them by listing (ls) the contetns of /mnt directory. It should have three folders named "@", "@home" and "@var"
  unmount /mnt
-  #+begin_src
+  #+begin_src shell
 umount /mnt
   #+end_src
  mount the rooot partition again (at subvolume @) but this time using btrfs option. My personal ones are
-  #+begin_src
+  #+begin_src shell
 mount -o defaults,noatime,space_cache=v2,discard=async,compress=zstd,ssd,subvol=@ /dev/sda2 /mnt
   #+end_src
  create the folders in mounted directory
-  #+begin_src
+  #+begin_src shell
 mkdir -p /mnt/{boot,home,var}
   #+end_src
  mount root partion
-  #+begin_src
+  #+begin_src shell
 mount /dev/sda1 /mnt/boot
   #+end_src
   turn the swap partition on
-  #+begin_src
+  #+begin_src shell
 swapon /dev/sda3
   #+end_src
 
