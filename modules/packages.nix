@@ -17,9 +17,6 @@
 #     librewolf
      qutebrowser
       python311Packages.adblock
-      uget
-        uget-integrator
-      motrix
 # Command Utilites 
      brightnessctl
      git
