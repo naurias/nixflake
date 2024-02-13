@@ -35,6 +35,7 @@
      slurp
 # Dev
      python3Full
+     texliveFull
      bluez
      cmake
      parallel
