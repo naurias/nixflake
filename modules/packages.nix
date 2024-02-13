@@ -36,7 +36,7 @@
 # Dev
      python3Full
      texliveFull
-     pandoc
+  #   pandoc
      bluez
      cmake
      parallel
