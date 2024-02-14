@@ -18,6 +18,7 @@ mkShell {
     glib
     gtk3
     icu
+    jdk21
     libGL
     libappindicator-gtk3
     libdrm
