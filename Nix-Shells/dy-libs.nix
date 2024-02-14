@@ -17,11 +17,14 @@ mkShell {
     gdk-pixbuf
     glib
     gtk3
+    qt5Full
     icu
     jdk21
     libGL
     libappindicator-gtk3
     libdrm
+    libsForQt5.qt5.qtwayland
+    qt6.qtwayland
     libglvnd
     libnotify
     libpulseaudio
