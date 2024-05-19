@@ -21,6 +21,7 @@
       ./modules/vaapi.nix
       ./modules/virt.nix
       ./modules/bluetooth.nix
+      ./modules/zshell.nix
     ];
 
 

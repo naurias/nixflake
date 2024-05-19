@@ -6,8 +6,6 @@
  home.homeDirectory = "/home/naurias";
  
 
- programs.zsh.enable = true;
-users.users.naurias.shell = pkgs.zsh;
 
  home.packages = with pkgs; [
 #  htop
