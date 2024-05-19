@@ -28,10 +28,6 @@
    ".config/alacritty/alacritty.toml" = {
      source = ./assets/alacritty/alacritty.toml;
    };
-   ".config/ranger" = {
-     source = ./assets/ranger;
-     recursive = true;
-   };
    ".config/dunst" = {
       source = ./assets/dunst;
       recursive = true; 
