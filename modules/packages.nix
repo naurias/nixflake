@@ -25,6 +25,8 @@
 #     lazygit
      ripgrep
      fd
+     fzf
+     zoxide
      wget
      pulseaudio
      steam-run
