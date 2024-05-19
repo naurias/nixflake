@@ -45,7 +45,7 @@
      networkmanagerapplet
      openssl
      python311Packages.virtualenv
-     nodejs_21
+  #   nodejs_21
      gcc
      xdg-utils
      xdg-desktop-portal-gtk
