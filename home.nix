@@ -5,6 +5,10 @@
  home.username = "naurias";
  home.homeDirectory = "/home/naurias";
  
+
+ programs.zsh.enable = true;
+
+
  home.packages = with pkgs; [
 #  htop
  ];
