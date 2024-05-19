@@ -36,6 +36,7 @@
      grimblast
      flameshot
      slurp
+     eza
 # Dev
      python3Full
      texliveFull
