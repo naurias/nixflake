@@ -12,8 +12,8 @@
 #      etBook
       source-sans-pro
 # Browsers
-#     brave
-     firefox
+     brave
+#     firefox
 #     librewolf
      qutebrowser
       python311Packages.adblock
@@ -22,7 +22,7 @@
      git
      htop
      #swaybg
-     lazygit
+#     lazygit
      ripgrep
      fd
      wget
@@ -31,6 +31,7 @@
      p7zip
      unzip
      grim
+     grimblast
      flameshot
      slurp
 # Dev
@@ -47,12 +48,12 @@
      nodejs_21
      gcc
      xdg-utils
-     #xdg-desktop-portal-gtk
+     xdg-desktop-portal-gtk
      qt6Packages.qt6ct
 # Themes
      hyprpaper
-     adw-gtk3
-     #qt6Packages.qtstyleplugin-kvantum
+    # adw-gtk3
+     qt6Packages.qtstyleplugin-kvantum
      #themechanger
      #vimix-icon-theme
     # vimix-cursors
@@ -72,7 +73,7 @@
      pavucontrol
      pamixer
      dunst
-     keepassxc
+   #  keepassxc
      thunderbird
      imagemagick
      gwenview
@@ -84,8 +85,10 @@
 # Desgin
      inkscape
 # File Managers
-     lf
-     ranger
+   #  lf
+   #  ranger
+   yazi
+   lxqt.pcmanfm-qt
      #krusader
 # Media # Games
      mpv
@@ -95,21 +98,22 @@
 #     streamlink-twitch-gui-bin
 
 # Security
-     cryptomator
+   #  cryptomator
      megasync
      bitwarden
 
 # Personal
      #discord
-     buku
-     bukubrow
+     vesktop
+   #  buku
+   #  bukubrow
    ];
 
-  programs.thunar.enable = true;
-  programs.thunar.plugins = with pkgs.xfce; [
+ # programs.thunar.enable = true;
+ # programs.thunar.plugins = with pkgs.xfce; [
    thunar-archive-plugin
    thunar-volman
-];
+#];
 
 
 }
