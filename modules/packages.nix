@@ -37,6 +37,9 @@
 # Dev
      python3Full
      texliveFull
+     podman-tui
+     podman-compose
+     distrobox
   #   pandoc
      bluez
      cmake
