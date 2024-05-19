@@ -13,7 +13,7 @@
       source-sans-pro
 # Browsers
      brave
-#     firefox
+     firefox
 #     librewolf
      qutebrowser
       python311Packages.adblock
