@@ -44,7 +44,7 @@
      blueman
      networkmanagerapplet
      openssl
-     python311Packages.virtualenv
+  #   python311Packages.virtualenv
   #   nodejs_21
      gcc
      xdg-utils
@@ -99,7 +99,7 @@
 
 # Security
    #  cryptomator
-     megasync
+    # megasync
      bitwarden
 
 # Personal
