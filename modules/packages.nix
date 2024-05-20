@@ -2,7 +2,6 @@
 
 {
 
-
    environment.systemPackages = with pkgs; [
 # Editors     
      neovim 
@@ -38,6 +37,7 @@
      slurp
      eza
 # Dev
+     sassc
      python3Full
      texliveFull
      podman-tui
@@ -58,14 +58,17 @@
      qt6Packages.qt6ct
      libsForQt5.qtstyleplugin-kvantum
      libsForQt5.qt5ct
-     kdePackages.qtstyleplugin-kvantum
+     #lxappearance
+   #  themechanger
+   #  nwg-look
+   #  kdePackages.qtstyleplugin-kvantum
 # Themes
      hyprpaper
     # adw-gtk3
     # qt6Packages.qtstyleplugin-kvantum
      #themechanger
-     vimix-icon-theme
-     papirus-icon-theme
+     #vimix-icon-theme
+     #papirus-icon-theme
     # vimix-cursors
     # lxappearance
      fira-code-nerdfont
