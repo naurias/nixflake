@@ -58,12 +58,14 @@
      qt6Packages.qt6ct
      libsForQt5.qtstyleplugin-kvantum
      libsForQt5.qt5ct
+     kdePackages.qtstyleplugin-kvantum
 # Themes
      hyprpaper
     # adw-gtk3
     # qt6Packages.qtstyleplugin-kvantum
      #themechanger
-     #vimix-icon-theme
+     vimix-icon-theme
+     papirus-icon-theme
     # vimix-cursors
     # lxappearance
      fira-code-nerdfont

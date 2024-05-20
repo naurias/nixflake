@@ -9,7 +9,7 @@
 
  home.packages = with pkgs; [
 #  htop
-  (unstablePkgs.catpuccin-kvantum.override {
+  (pkgs.catppuccin-kvantum.override {
    accent = "Blue";
    variant = "Macchiato";
   }
@@ -84,17 +84,21 @@
  #QT Theming
   qt = {
    enable = true;
-   platformTheme = "qt5ct";
+   platformTheme = "qtct";
    style = {
     name = "kvantum";
-    package = pkgs.catpuccin-kvantum;
+    package = pkgs.catppuccin-kvantum;
    };
   };
 
-  xdg.configFile = {
-        "Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.kvconfig".source = "${unstablePkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Macchiato-Blue/Cattpuccin-Macchiato-Blue.kvconfig";
-        "Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.svg".source = "${unstablePkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Macchiato-Blue/Cattpuccin-Macchiato-Blue.svg";
-  };
+#  xdg.configFile = {
+#        "Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.kvconfig".source = "${unstablePkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Macchiato-Blue/Cattpuccin-Macchiato-Blue.kvconfig";
+#        "Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.svg".source = "${unstablePkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Macchiato-Blue/Cattpuccin-Macchiato-Blue.svg";
+};
+
+#  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
+#    General.theme = "Catppuccin-Macchiato-Blue";
+#  };
   
 
   #GTK THemeing
@@ -102,22 +106,22 @@
    gtk = {
     enable = true;
     theme = {
-     name = "Tokyonight-Dark-BL";
-     package = pkgs.tokyo-night-gtk;
+      name = "Tokyonight-Dark-BL";
+      package = pkgs.tokyo-night-gtk;
     };
    };
 
-        iconTheme = {
-          name = "TokyoNight-SE";
-          package = tokyo-night-icons;
-        };
-      };
+#        iconTheme = {
+#     name = "Papirus";
+#     package = pkgs.papirus-icon-theme;
+#        };
+
 
    home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 24;
+    size = 15;
    };
 
  home.stateVersion = "23.11";
