@@ -56,10 +56,12 @@
      xdg-utils
      xdg-desktop-portal-gtk
      qt6Packages.qt6ct
+     libsForQt5.qtstyleplugin-kvantum
+     libsForQt5.qt5ct
 # Themes
      hyprpaper
     # adw-gtk3
-     qt6Packages.qtstyleplugin-kvantum
+    # qt6Packages.qtstyleplugin-kvantum
      #themechanger
      #vimix-icon-theme
     # vimix-cursors

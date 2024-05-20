@@ -9,6 +9,13 @@
 
  home.packages = with pkgs; [
 #  htop
+  (unstablePkgs.catpuccin-kvantum.override {
+   accent = "Blue";
+   variant = "Macchiato"
+  } 
+  )
+
+
  ];
 
   home.file = {
@@ -45,7 +52,7 @@
      recursive = true;
    };
 #    ".config/hypr/hyprpaper.conf" = {
-#        source = ./assets/hypr/hyprpaper.conf;
+#        source = ./assets/hy	pr/hyprpaper.conf;
     #  };
    # ".config/hypr/wallpapers" = {
   #      source = ./assets/hypr/wallpapers;
@@ -75,11 +82,37 @@
 #   gtk.iconTheme.package = pkgs.papirus-icon-theme;
 #   gtk.iconTheme.name = "Papirus";
  #QT Theming
-#   qt.enable  = true; 
-#   qt.platformTheme = "gtk";
-#   qt.style.name = "adwaita-dark";
-# Packages to use for theme 
-#   qt.style.package = pkgs.adwaita-qt6;
+  qt = {
+   enable = true;
+   platformTheme = "qt5ct";
+   style = {
+    name = "kvantum";
+    package = pkgs.catpuccin-kvantum;
+   };
+  };
+
+  xdg.configFile = {
+        "Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.kvconfig".source = "${unstablePkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Macchiato-Blue/Cattpuccin-Macchiato-Blue.kvconfig";
+        "Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.svg".source = "${unstablePkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Macchiato-Blue/Cattpuccin-Macchiato-Blue.svg";
+  };
+  
+
+  #GTK THemeing
+
+   gtk = {
+    enable = true;
+    theme = {
+     name = "Tokyonight-Dark-BL";
+     package = pkgs.tokyo-night-gtk;
+    };
+   };
+
+   home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 24;
+   };
 
  home.stateVersion = "23.11";
  programs.home-manager.enable = true;
