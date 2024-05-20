@@ -11,8 +11,8 @@
 #  htop
   (unstablePkgs.catpuccin-kvantum.override {
    accent = "Blue";
-   variant = "Macchiato"
-  } 
+   variant = "Macchiato";
+  }
   )
 
 
@@ -106,6 +106,12 @@
      package = pkgs.tokyo-night-gtk;
     };
    };
+
+        iconTheme = {
+          name = "TokyoNight-SE";
+          package = tokyo-night-icons;
+        };
+      };
 
    home.pointerCursor = {
     gtk.enable = true;
