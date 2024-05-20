@@ -1,5 +1,14 @@
 {config, pkgs, ... }:
 
+let
+  variant = "Macchiato";
+  accent = "Blue";
+  kvantumThemePackage = pkgs.catppuccin-kvantum.override {
+    inherit variant accent;
+  };
+in
+
+
 {
  
  home.username = "naurias";
@@ -55,6 +64,48 @@
 
 
  #home.file.".config/hypr/hyprpaper.conf".source = ./assets/hypr/hyprpaper.conf;
+
+ # Theming
+
+ 	#GTK
+	gtk.enable = true;
+
+	gtk.cursorTheme.package = pkgs.bibata-cursors;
+	gtk.cursorTheme.name = "Bibata-Modern-Ice";
+	gtk.cursorTheme.size = 24;
+
+	gtk.theme = {
+         name = "Catppuccin-Macchiato-Standard-Blue-Dark";
+	  package = pkgs.catppuccin-gtk.override {
+          accents = [ "blue" ];
+          size = "standard";
+          variant = "macchiato";
+         };
+	};
+
+	gtk.iconTheme.package = pkgs.papirus-icon-theme;
+	gtk.iconTheme.name = "Papirus-Dark";
+	
+
+
+	#QT
+	qt.enable = true;
+	qt.platformTheme = "qtct";
+	qt.style.name = "kvantum";
+
+	 xdg.configFile = {
+    "Kvantum/kvantum.kvconfig".text = ''
+      [General]
+      theme=Catppuccin-${variant}-${accent}
+    '';
+
+    # The important bit is here, links the theme directory from the package to a directory under `~/.config`
+    # where Kvantum should find it.
+    "Kvantum/Catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/Catppuccin-${variant}-${accent}";
+  };
+
+
+
 
 
  home.stateVersion = "23.11";
