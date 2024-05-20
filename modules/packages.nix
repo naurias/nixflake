@@ -15,6 +15,7 @@
      firefox
 #     librewolf
      qutebrowser
+     vivaldi
       python311Packages.adblock
 # Command Utilites 
      brightnessctl
