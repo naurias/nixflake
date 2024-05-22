@@ -119,6 +119,8 @@
 # Personal
      #discord
      vesktop
+     protonup
+     lutris
    #  buku
    #  bukubrow
    ];
