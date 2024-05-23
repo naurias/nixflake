@@ -120,6 +120,8 @@
      #discord
      vesktop
      protonup
+     steam 
+     steam-original
      lutris
    #  buku
    #  bukubrow
