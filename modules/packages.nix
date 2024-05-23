@@ -120,8 +120,8 @@
      #discord
      vesktop
      protonup
-     steam 
-     steamPackages.steam
+#     steam 
+#     steamPackages.steam
      lutris
    #  buku
    #  bukubrow

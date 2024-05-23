@@ -22,6 +22,7 @@
       ./modules/virt.nix
       ./modules/bluetooth.nix
       ./modules/zshell.nix
+      ./modules/gaming.nix
     ];
 
 
