@@ -121,7 +121,7 @@
      vesktop
      protonup
      steam 
-     steam-original
+     steamPackages.steam
      lutris
    #  buku
    #  bukubrow
