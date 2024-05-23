@@ -90,7 +90,7 @@ in
 
 	#QT
 	qt.enable = true;
-	qt.platformTheme = "qtct";
+	qt.platformTheme.name = "qtct";
 	qt.style.name = "kvantum";
 
 	 xdg.configFile = {
