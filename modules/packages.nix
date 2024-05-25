@@ -121,6 +121,8 @@
      vesktop
      protonup
      protonvpn-gui
+     kdePackages.ark
+     unrar
 #     steam 
 #     steamPackages.steam
      lutris
