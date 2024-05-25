@@ -120,6 +120,7 @@
      #discord
      vesktop
      protonup
+     protonvpn-gui
 #     steam 
 #     steamPackages.steam
      lutris
