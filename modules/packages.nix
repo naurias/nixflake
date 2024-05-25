@@ -16,6 +16,7 @@
 #     librewolf
      qutebrowser
      vivaldi
+     vivaldi-ffmpeg-codecs
       python311Packages.adblock
 # Command Utilites 
      brightnessctl
