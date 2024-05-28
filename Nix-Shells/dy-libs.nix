@@ -31,7 +31,6 @@ mkShell {
     cmake
     #Cocoa
     ninja
-
     libGL
     libappindicator-gtk3
     libdrm
