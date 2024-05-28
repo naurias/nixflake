@@ -26,7 +26,7 @@ mkShell {
     gamemode
     icu
     jdk21
-    fetchFromGitHub
+    #fetchFromGitHub
     stripJavaArchivesHook
     cmake
     #Cocoa
