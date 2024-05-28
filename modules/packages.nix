@@ -41,7 +41,7 @@
 # Dev
      sassc
      python3Full
-     texliveFull
+     #texliveFull
      podman-tui
      podman-compose
      distrobox
