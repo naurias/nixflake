@@ -18,8 +18,20 @@ mkShell {
     glib
     gtk3
     qt5Full
+    libsForQt5.qt5.qtbase
+    libsForQt5.quazip
+    extra-cmake-modules
+    tomlplusplus
+    ghc_filesystem
+    gamemode
     icu
     jdk21
+    fetchFromGitHub
+    stripJavaArchivesHook
+    cmake
+    #Cocoa
+    ninja
+
     libGL
     libappindicator-gtk3
     libdrm
