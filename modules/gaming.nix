@@ -15,7 +15,7 @@
  programs.gamemode.enable = true;
 
  environment.sessionVariables = {
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/naurias/.steam/root/compatibilitytools.d";
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/nix/.steam/root/compatibilitytools.d";
   };
 
 }

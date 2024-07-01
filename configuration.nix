@@ -76,7 +76,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-   users.users.naurias = {
+   users.users.nix = {
      isNormalUser = true;
      extraGroups = [ "wheel" "libvirtd" "docker" ]; # Enable ‘sudo’ for the user.
   #   packages = with pkgs; [
@@ -135,7 +135,7 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.05"; # Did you read the comment?
 
 }
 

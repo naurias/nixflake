@@ -3,7 +3,7 @@
 {
 
 programs.zsh.enable = true;
-users.users.naurias.shell = pkgs.zsh;
+users.users.nix.shell = pkgs.zsh;
 
 
 }
