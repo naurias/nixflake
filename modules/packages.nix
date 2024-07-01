@@ -5,9 +5,9 @@
    environment.systemPackages = with pkgs; [
 # Editors     
      neovim 
-     emacs29-pgtk
-      libvterm
-      emacsPackages.vterm
+#     emacs29-pgtk
+#      libvterm
+#      emacsPackages.vterm
 #      etBook
       source-sans-pro
 # Browsers
@@ -15,8 +15,8 @@
      firefox
 #     librewolf
      qutebrowser
-     vivaldi
-     vivaldi-ffmpeg-codecs
+#     vivaldi
+#     vivaldi-ffmpeg-codecs
       python311Packages.adblock
 # Command Utilites 
      brightnessctl
@@ -89,7 +89,7 @@
      pamixer
      dunst
    #  keepassxc
-     thunderbird
+#     thunderbird
      imagemagick
      gwenview
      okular
@@ -98,7 +98,7 @@
 # Torrents 
      qbittorrent
 # Desgin
-     inkscape
+#     inkscape
 # File Managers
    #  lf
    #  ranger
@@ -115,7 +115,7 @@
 # Security
    #  cryptomator
     # megasync
-     bitwarden
+#     bitwarden
 
 # Personal
      #discord
