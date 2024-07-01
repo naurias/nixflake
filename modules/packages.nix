@@ -40,6 +40,8 @@
      eza
 # Dev
      sassc
+     rclone
+     rclone-browser
      python3Full
      #texliveFull
      podman-tui
