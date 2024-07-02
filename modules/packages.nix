@@ -5,10 +5,11 @@
    environment.systemPackages = with pkgs; [
 # Editors     
      neovim 
-#     emacs29-pgtk
-#      libvterm
-#      emacsPackages.vterm
+     emacs29-pgtk
+      libvterm
+      emacsPackages.vterm
 #      etBook
+     zed-editor
       source-sans-pro
 # Browsers
      brave
