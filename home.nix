@@ -107,7 +107,12 @@ in
 
 
 # ZSH
+      programs.zsh = {
+          enable = true;
+          enableAutosuggestions.enable = true;
+          syntaxHighlighting.enable = true;
 
+      };
  programs.oh-my-posh = {
   enable = true;
   enableZshIntegration = true;
