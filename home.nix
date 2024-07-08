@@ -105,7 +105,19 @@ in
   };
 
 
+# ZSH
 
+ progams.zsh = {
+  enable = true;
+  enableCompletion = true;
+  autosuggestion = {
+   enable = true; 
+  };
+  syntaxHighlighting = {
+   enable = true;
+  };
+
+ };
 
 
  home.stateVersion = "24.05";
