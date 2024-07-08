@@ -113,7 +113,7 @@ in
   package = pkgs.oh-my-posh;
   useTheme = "bubbles";
 
-# };
+ };
 
 
 
