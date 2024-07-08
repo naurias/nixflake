@@ -8,7 +8,7 @@ programs.zsh = {
   enableCompletion = true;
   autosuggestion.enable = true;
   syntaxHighlighting.enable = true;
- };
+
 users.users.nix.shell = pkgs.zsh;
 
 
