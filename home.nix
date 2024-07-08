@@ -8,7 +8,6 @@ let
   };
 in
 
-
 {
  
  home.username = "nix";
@@ -36,10 +35,11 @@ in
       source = ./assets/hypr;
       recursive = true;
     };
-
-   ".config/alacritty/alacritty.toml" = {
-     source = ./assets/alacritty/alacritty.toml;
+ 
+   ".zshrc" = {
+     source = ./assets/.zshrc;
    };
+
    ".config/dunst" = {
       source = ./assets/dunst;
       recursive = true; 
@@ -49,9 +49,13 @@ in
         source = ./assets/kitty;
         recursive = true;
       };
-
-   ".config/lf" = {
-     source = ./assets/lf;
+    ".config/fzf-tab" = {
+      source = ./assets/fzf-tab;
+      recursive = true;
+    };
+   
+   ".config/ohmyposh" = {
+     source = ./assets/ohmyposh;
      recursive = true;
    };
 
