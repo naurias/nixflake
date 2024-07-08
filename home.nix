@@ -67,7 +67,8 @@ in
 
  # Theming
 
- 	#GTK
+ 	#GTK rh
+
 	gtk.enable = true;
 
 	gtk.cursorTheme.package = pkgs.bibata-cursors;
