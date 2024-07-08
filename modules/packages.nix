@@ -85,6 +85,7 @@
       ueberzugpp
       ffmpegthumbnailer
      #wezterm
+     oh-my-posh
 # GUI Utilites
      rofi-wayland
      waybar
