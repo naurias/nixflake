@@ -109,11 +109,11 @@ in
 # ZSH
 
  progams.zsh = {
-#  enable = true;
+  enable = true;
   enableCompletion = true;
 #  autosuggestion.enable = true;
-  autosuggestion.enable = true;
-  syntaxHighlighting.enable = true;
+#  autosuggestion.enable = true;
+#  syntaxHighlighting.enable = true;
 
  };
  
