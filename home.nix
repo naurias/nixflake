@@ -111,9 +111,9 @@ in
   enable = true;
   enableZshIntegration = true;
   package = pkgs.oh-my-posh;
-  useTheme = "catppuccin";
+  useTheme = "bubbles";
 
- };
+# };
 
 
 
