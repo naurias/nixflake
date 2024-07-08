@@ -106,12 +106,16 @@ in
   };
 
 
-# ZSH
-#      programs.zsh = {
-#          enable = true;
-#          enableAutosuggestions.enable = true;
-#          syntaxHighlighting.enable = true;
-#	};
+# OH-MY-POSH for zsh
+ programs.oh-my-posh = {
+  enable = true;
+  enableZshIntergration = true;
+  package = pkgs.oh-my-posh;
+  useTheme = "catppuccin";
+
+ };
+
+
 
  home.stateVersion = "24.05";
  programs.home-manager.enable = true;
