@@ -49,8 +49,8 @@ in
         source = ./assets/kitty;
         recursive = true;
       };
-    ".config/fzf-tab" = {
-      source = ./assets/fzf-tab;
+    ".config/fzftab" = {
+      source = ./assets/fzftab;
       recursive = true;
     };
    

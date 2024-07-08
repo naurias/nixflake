@@ -34,7 +34,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 #zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-source ~/.config/fzf-tab/fzf-tab.plugin.zsh
+source ~/.config/fzftab/fzf-tab.plugin.zsh
 
 # yazi funciton
 
