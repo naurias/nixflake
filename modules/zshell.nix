@@ -7,7 +7,7 @@
 programs.zsh = {
   enable = true;
   autosuggestions.enable = true;
-  enableCompletition = true;
+  enableCompletion = true;
 #  ohMyZsh.enable = true;
 #  ohMyZsh.plugins = [ "git" ];
 #  ohMyZsh.theme = "frisk";
