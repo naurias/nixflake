@@ -118,7 +118,11 @@ in
   };
 
  };
-
+ 
+ programs.oh-my-posh = {
+  enableZshIntegration = true;
+  useTheme = 'catppuccin_mocha';
+ };
 
  home.stateVersion = "24.05";
  programs.home-manager.enable = true;
