@@ -112,19 +112,6 @@ in
 #          enableAutosuggestions.enable = true;
 #          syntaxHighlighting.enable = true;
 #	};
- programs.zsh = {
-   enable = true;
-   enableCompletion = true;
-   autosuggestion.enable = true;
-   syntaxHighlighting.enable = true;
-   };
-
-
- programs.oh-my-posh = {
-  enable = true;
-  enableZshIntegration = true;
-  useTheme = "catppuccin";
- };
 
  home.stateVersion = "24.05";
  programs.home-manager.enable = true;
