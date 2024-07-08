@@ -113,7 +113,7 @@ in
   enableCompletion = true;
   autosuggestion.enable = true;
   syntaxHighlighting.enable = true;
-
+ };
  programs.oh-my-posh = {
   enableZshIntegration = true;
   useTheme = "catppuccin";
