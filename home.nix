@@ -109,7 +109,7 @@ in
 # OH-MY-POSH for zsh
  programs.oh-my-posh = {
   enable = true;
-  enableZshIntergration = true;
+  enableZshIntegration = true;
   package = pkgs.oh-my-posh;
   useTheme = "catppuccin";
 
