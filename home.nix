@@ -121,7 +121,7 @@ in
  
  programs.oh-my-posh = {
   enableZshIntegration = true;
-  useTheme = catppuccin_mocha;
+  useTheme = "catppuccin";
  };
 
  home.stateVersion = "24.05";
