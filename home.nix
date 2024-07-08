@@ -111,7 +111,7 @@ in
   enable = true;
   enableZshIntegration = true;
   package = pkgs.oh-my-posh;
-#  useTheme = "bubbles";
+ # useTheme = "bubbles";
 
  };
 
