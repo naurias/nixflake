@@ -15,10 +15,10 @@
      brave
      firefox
 #     librewolf
-     qutebrowser
+#     qutebrowser
 #     vivaldi
 #     vivaldi-ffmpeg-codecs
-      python311Packages.adblock
+#      python311Packages.adblock
 # Command Utilites 
      brightnessctl
      git
