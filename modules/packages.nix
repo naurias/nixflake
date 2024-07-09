@@ -44,7 +44,7 @@
      rclone
      rclone-browser
      python3Full
-     #texliveFull
+     texliveFull
      podman-tui
      podman-compose
      distrobox

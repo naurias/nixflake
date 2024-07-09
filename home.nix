@@ -77,7 +77,7 @@ in
 
 	gtk.cursorTheme.package = pkgs.bibata-cursors;
 	gtk.cursorTheme.name = "Bibata-Modern-Ice";
-	gtk.cursorTheme.size = 24;
+	gtk.cursorTheme.size = 20;
 
 	gtk.theme = {
          name = "Catppuccin-Macchiato-Standard-Blue-Dark";
