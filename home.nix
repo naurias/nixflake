@@ -1,7 +1,7 @@
 {config, pkgs, ... }:
 
 let
-  variant = "Macchiato";
+  variant = "Mocha";
   accent = "Blue";
   kvantumThemePackage = pkgs.catppuccin-kvantum.override {
     inherit variant accent;
@@ -80,11 +80,11 @@ in
 	gtk.cursorTheme.size = 20;
 
 	gtk.theme = {
-         name = "Catppuccin-Macchiato-Standard-Blue-Dark";
+         name = "Catppuccin-Mocha-Standard-Blue-Dark";
 	  package = pkgs.catppuccin-gtk.override {
           accents = [ "blue" ];
           size = "standard";
-          variant = "macchiato";
+          variant = "mocha";
          };
 	};
 
