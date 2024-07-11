@@ -1,12 +1,5 @@
 {config, pkgs, ... }:
 
-let
-  variant = "Mocha";
-  accent = "Blue";
-  kvantumThemePackage = pkgs.catppuccin-kvantum.override {
-    inherit variant accent;
-  };
-in
 
 {
  
@@ -95,6 +88,8 @@ in
 	qt.platformTheme.name = "qtct";
 	qt.style.name = "kvantum";
 
+	# Kvantum
+
 	 xdg.configFile = {
     "Kvantum/kvantum.kvconfig".text = ''
       [General]
@@ -106,9 +101,6 @@ in
 	recursive = true;
      };
 
-    # The important bit is here, links the theme directory from the package to a directory under `~/.config`
-    # where Kvantum should find it.
-#    "Kvantum/Catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/Catppuccin-${variant}-${accent}";
   };
 
 
