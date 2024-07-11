@@ -73,13 +73,13 @@
 	gtk.cursorTheme.size = 20;
 
 	gtk.theme = {
-         name = "Gruvbox-Dark";
-	 package = pkgs.gruvbox-gtk-theme;
+         name = "Orchis-Dark";
+	 package = pkgs.orchis-theme;
 	 
 	};
 
-	gtk.iconTheme.package = pkgs.gruvbox-plus-icons;
-	gtk.iconTheme.name = "Gruvbox-Plus-Dark";
+	gtk.iconTheme.package = pkgs.papirus-icon-theme;
+	gtk.iconTheme.name = "Papirus-Dark";
 	
 
 
@@ -93,11 +93,11 @@
 	 xdg.configFile = {
     "Kvantum/kvantum.kvconfig".text = ''
       [General]
-      theme=Gruvbox-Dark-Brown
+      theme=Orchis-dark-solid
     '';
 
-     "Kvantum/Gruvbox-Dark-Brown" = {
-	source = ./assets/Kvantum/Gruvbox-Dark-Brown;
+     "Kvantum/Orchis-dark-solid" = {
+	source = ./assets/Kvantum/Orchis-dark-solid;
 	recursive = true;
      };
 
