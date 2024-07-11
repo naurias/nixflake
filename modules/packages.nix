@@ -41,7 +41,7 @@
      eza
 # Dev
      sassc
-     github-desktop
+     #github-desktop
      rclone
      rclone-browser
      python3Full

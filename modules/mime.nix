@@ -4,13 +4,13 @@
  xdg.mime.enable = true; 
  xdg.mime.defaultApplications = {
 
-    "inode/directory" = "yazi.desktop";
+    "inode/directory" = "pcmanfm-qt.desktop";
     "image/png"  = "org.kde.gwenview.desktop";
     "image/jpeg"  = "org.kde.gwenview.desktop";
-    "x-scheme-handler/http" = "brave.desktop";
-    "x-scheme-handler/https" = "brave.desktop";
+    "x-scheme-handler/http" = "firefox.desktop";
+    "x-scheme-handler/https" = "firefox.desktop";
     "text/html" = "firefox.desktop";
-    "x-scheme-handler/chrome" = "brave.desktop";
+    "x-scheme-handler/chrome" = "firefox.desktop";
     "video/mp4" = "mpv.desktop";
     "video/mpeg" = "mpv.desktop";
     "text/plain" = "nvim.desktop";
