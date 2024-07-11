@@ -80,16 +80,13 @@ in
 	gtk.cursorTheme.size = 20;
 
 	gtk.theme = {
-         name = "Catppuccin-Mocha-Standard-Blue-Dark";
-	  package = pkgs.catppuccin-gtk.override {
-          accents = [ "blue" ];
-          size = "standard";
-          variant = "mocha";
-         };
+         name = "Gruvbox-Dark";
+	 package = pkgs.gruvbox-gtk-theme;
+	 
 	};
 
-	gtk.iconTheme.package = pkgs.papirus-icon-theme;
-	gtk.iconTheme.name = "Papirus-Dark";
+	gtk.iconTheme.package = pkgs.gruvbox-plus-icons;
+	gtk.iconTheme.name = "Gruvbox-Plus-Dark";
 	
 
 
@@ -101,12 +98,17 @@ in
 	 xdg.configFile = {
     "Kvantum/kvantum.kvconfig".text = ''
       [General]
-      theme=Catppuccin-${variant}-${accent}
+      theme=Gruvbox-Dark-Brown
     '';
+
+     "Kvantum/Gruvbox-Dark-Brown" = {
+	source = ./assets/Kvantum/Gruvbox-Dark-Brown;
+	recursive = true;
+     };
 
     # The important bit is here, links the theme directory from the package to a directory under `~/.config`
     # where Kvantum should find it.
-    "Kvantum/Catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/Catppuccin-${variant}-${accent}";
+#    "Kvantum/Catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/Catppuccin-${variant}-${accent}";
   };
 
 

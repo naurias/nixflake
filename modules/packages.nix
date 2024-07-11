@@ -106,6 +106,7 @@
 # File Managers
    #  lf
    #  ranger
+   #thunar
    yazi
    lxqt.pcmanfm-qt
      #krusader
@@ -135,7 +136,7 @@
    #  bukubrow
    ];
 
- # programs.thunar.enable = true;
+  programs.thunar.enable = true;
  # programs.thunar.plugins = with pkgs.xfce; [
  #  thunar-archive-plugin
  #  thunar-volman
