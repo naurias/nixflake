@@ -122,6 +122,7 @@
    #  cryptomator
     # megasync
 #     bitwarden
+      veracrypt
 
 # Personal
      #discord
